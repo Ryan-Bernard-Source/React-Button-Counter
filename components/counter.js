@@ -1,5 +1,7 @@
+// Needed to open app in browser and import React useState Hook
 "use client";
 import {useState} from "react";
+// initialCount and initialStep Counter
 export default function Counter({initialCount=0, initialStep=1}){
     const [count,setCount] = useState(initialCount);
     const [step, setStep] = useState(initialStep);
@@ -14,11 +16,11 @@ export default function Counter({initialCount=0, initialStep=1}){
             return next>=0 ? next:c;
         });
     }
-
+// Reset Counter to zero.
     function reset(){
         setCount(0);
     }
-
+// Updates the step value from button input.
     function handleStepChange(e){
         const value = Number(e.target.value);
         setStep(value>=1 ? value:1);
