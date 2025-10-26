@@ -5,10 +5,14 @@ export default function Counter({initialCount=0, initialStep=1}){
     const [step, setStep] = useState(initialStep);
 
     function increment(){
-        setCount(count+step);}
+        setCount(c => c+step);
+    }
+
     function decrement(){
-        if (count-step>=0){
-            setCount(count-step);}
+        setCount(c=>{
+            const next=c-step;
+            return next>=0 ? next:c;
+        });
     }
 
     function reset(){
