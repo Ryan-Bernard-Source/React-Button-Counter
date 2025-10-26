@@ -29,7 +29,7 @@ export default function Counter({initialCount=0, initialStep=1}){
     return(
         <div className="counter">
             <div className="count" aria-live="polite">
-                Counter:<strong>{count}</strong>
+                Counter:<strong>  {count}</strong>
             </div>
 
             <div className="buttons">
@@ -39,7 +39,7 @@ export default function Counter({initialCount=0, initialStep=1}){
             </div>
 
             <label className="step-label">
-                Step:<input type="number" min="1" value={step} onChange={handleStepChange}>
+                <input type="number" min="1" value={step} onChange={handleStepChange}>
             </input>         
             </label>
         </div>
