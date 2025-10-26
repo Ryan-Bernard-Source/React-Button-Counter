@@ -32,7 +32,7 @@ export default function Counter({initialCount=0, initialStep=1}){
 
             <div className="buttons">
                 <button onClick={increment}>+1</button>
-                <button onClick={decrement} disabled={count-step>0}>-1</button>
+                <button onClick={decrement} disabled={count-step<0}>-1</button>
                 <button onClick={reset}>Reset</button>
             </div>
 
