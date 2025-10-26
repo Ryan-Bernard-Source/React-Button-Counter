@@ -1,7 +1,8 @@
+"use client";
 import {useState} from "react";
-export default function Counter({intialCount=0, intialStep=1}){
-    const [count,setCount] = useState(intialCount);
-    const [step, setStep] = useState(intialStep);
+export default function Counter({initialCount=0, initialStep=1}){
+    const [count,setCount] = useState(initialCount);
+    const [step, setStep] = useState(initialStep);
 
     function increment(){
         setCount(count+step);}
