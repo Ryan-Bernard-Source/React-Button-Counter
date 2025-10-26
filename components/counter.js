@@ -23,7 +23,7 @@ export default function Counter({initialCount=0, initialStep=1}){
         const value = Number(e.target.value);
         setStep(value>=1 ? value:1);
     }
-
+// Buttons
     return(
         <div className="counter">
             <div className="count" aria-live="polite">
