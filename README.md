@@ -1,5 +1,7 @@
 Button Counter Project
 
+A simple reusable button counter that features a counter that can increment, decrement, reset, and update its step amount. Uses both React and Javascript to accomplish this project.
+
 ## Getting Started Locally
 
 First, run the development server:
